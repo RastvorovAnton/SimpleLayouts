@@ -1,0 +1,129 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-image: url(https://images02.nicepage.com/c461c07a441a5d220e8feb1a/8fb7905f714e55319fed378c/asd-min.jpg);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 52vh;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #242930;
+    margin: 20px;
+    width: 15%;
+    padding: 25px 33px;
+    padding-bottom: 40px;
+}
+
+
+.content-text {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    line-height: 25px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 10px;
+    width: 25%;
+}
+
+.button-container:hover {
+    cursor: pointer;
+    background-color: #3c3e40;
+}
+
+.more {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1150px) {
+    .content-text {
+        width: 90%;
+    }
+
+    .all-blocks {
+        margin-top: 40vh;
+    }
+    
+    .block {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .content-text {
+        width: 95%;
+    }
+
+    .all-blocks {
+        display: flex;
+        justify-content: center;
+        margin-top: 23vh;
+        margin-left: 12vw;
+    }
+
+    .all-blocks:last-child {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .block {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+    .all-blocks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 12vw;
+    }
+
+    .block {
+        width: 60%;
+        padding-bottom: 20px;
+    }
+    
+}
